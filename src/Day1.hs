@@ -9,7 +9,7 @@ day1 = do
   contents
     |> splitOn "\n"
     |> init
-    |> map (\x -> (read x :: Int))
+    |> map (\x -> read x :: Int)
     |> map calculateFuel
     |> sum
     |> print
